@@ -34,7 +34,6 @@ jobs:
           fi
           echo "SDKMANAGER_DIR=$(dirname "$SDKMANAGER")" >> "$GITHUB_ENV"
           echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
-          chmod +x "$SDKMANAGER"
 
       - name: Install Android SDK components
         run: |
